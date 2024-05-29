@@ -1,0 +1,73 @@
+# Query: LHL
+
+57 results - 14 files
+
+DKV_Lab05\DKV_Lab05.sln:
+  6: Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DKV_Lab05", "DKV_Lab05\DKV_Lab05.csproj", "{0E48AF34-F55B-42CB-9E8A-6BEF7CE4B1CE}"
+
+DKV_Lab05\.vs\DKV_Lab05\config\applicationhost.config:
+  166:                     <virtualDirectory path="/" physicalPath="C:\exercise\BaiTapVS\LS_Lehoanglong_ASP\ASPNET_DKV\DKV_Lab05\DKV_Lab05" />
+
+DKV_Lab05\DKV_Lab05\DKV_Lab05.csproj:
+   16:     <AssemblyName>DKV_Lab05</AssemblyName>
+  123:     <Compile Include="Controllers\DKVHomeController.cs" />
+  124:     <Compile Include="Controllers\DKVMemberController.cs" />
+  128:     <Compile Include="Models\DKVMember.cs" />
+  179:     <Content Include="Views\DKVHome\About.cshtml" />
+  180:     <Content Include="Views\DKVHome\Contact.cshtml" />
+  181:     <Content Include="Views\DKVHome\Index.cshtml" />
+  182:     <Content Include="Views\DKVMember\Details.cshtml" />
+  183:     <Content Include="Views\DKVMember\DKVCreateOne.cshtml" />
+  184:     <Content Include="Views\DKVMember\DKVCreateTwo.cshtml" />
+
+DKV_Lab05\DKV_Lab05\Global.asax:
+  1: <%@ Application Codebehind="Global.asax.cs" Inherits="DKV_Lab05.MvcApplication" Language="C#" %>
+
+DKV_Lab05\DKV_Lab05\Global.asax.cs:
+  9: namespace DKV_Lab05
+
+DKV_Lab05\DKV_Lab05\Controllers\DKVHomeController.cs:
+  7: namespace DKV_Lab05.Controllers
+  9:     public class DKVHomeController : Controller
+
+DKV_Lab05\DKV_Lab05\Models\DKVMember.cs:
+  7: namespace DKV_Lab05.Models
+  9:     public class DKVMember
+
+DKV_Lab05\DKV_Lab05\Properties\AssemblyInfo.cs:
+   8: [assembly: AssemblyTitle("DKV_Lab05")]
+  12: [assembly: AssemblyProduct("DKV_Lab05")]
+
+DKV_Lab05\DKV_Lab05\Properties\DKVMemberController.cs:
+   1: using DKV_Lab05.Models;
+   9: namespace DKV_Lab05.Controllers
+  11:     public class DKVMemberController : Controller
+  13:         // GET: DKVMember
+  18:         public ActionResult DKVCreateOne()
+  23:         public ActionResult DKVCreateOne(DKVMember m)
+  28:         public ActionResult DKVCreateTwo()
+  34:         public ActionResult DKVCreateTwo(DKVMember m)
+  74:         public ActionResult DKVCreateThree()
+  79:         public ActionResult DKVCreateThree(DKVMember m)
+
+DKV_Lab05\DKV_Lab05\Views\Web.config:
+  20:         <add namespace="DKV_Lab05" />
+
+DKV_Lab05\DKV_Lab05\Views\DKVMember\Details.cshtml:
+   1: @model DKV_Lab05.Models.DKVMember
+  10:     <h4>DKVMember</h4>
+  61:     @Html.ActionLink("Back to List", "DKVCreateOne")
+
+DKV_Lab05\DKV_Lab05\Views\DKVMember\dkvCreateOne.cshtml:
+  1: @model DKV_Lab05.Models.DKVMember
+
+DKV_Lab05\DKV_Lab05\Views\DKVMember\dkvCreateTwo.cshtml:
+  1: @model DKV_Lab05.Models.DKVMember
+
+DKV_Lab05\DKV_Lab05\Views\Shared\_Layout.cshtml:
+  20:                     <li>@Html.ActionLink("Home", "Index", "DKVHome", new { area = "" }, new { @class = "nav-link" })</li>
+  21:                     <li>@Html.ActionLink("About", "About", "DKVHome", new { area = "" }, new { @class = "nav-link" })</li>
+  22:                     <li>@Html.ActionLink("Contact", "Contact", "DKVHome", new { area = "" }, new { @class = "nav-link" })</li>
+  23:                     <li>@Html.ActionLink("Sử Dụng HTML5 validate", "DKVCreateOne", "DKVMember", new { area = "" }, new { @class = "nav-link" })</li>
+  24:                     <li>@Html.ActionLink("Tự validate", "DKVCreateTwo", "DKVMember", new { area = "" }, new { @class = "nav-link" })</li>
+  25:                     <li>@Html.ActionLink("Sử dụng Annontation validate", "DKVCreateThree", "DKVMember", new { area = "" }, new { @class = "nav-link" })</li>
